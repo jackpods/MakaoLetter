@@ -195,6 +195,67 @@ header ul .login button{
   }
 
   .more .plus{  
-    margin-right:1rem ;
+    margin-top: 5rem;
+    margin-right:5rem ;
+  }
+
+}
+
+@media(max-width:900){
+  .content .contents{    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);     
+    
+  }
+  
+}
+
+@media (max-width:600px){
+  header #logo{
+  
+  padding: 0;
+  padding-left:20vw ;
+  font-size: 10vw;
+
+  }  
+
+  #slogan .title{
+    padding: 0 ;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    
+  }
+
+  #slogan img{
+    padding-left: 3vw;
+    
+    width: 70vw;
+  }
+
+  .content .contents{
+    grid-template-columns: 65rem;
+    grid-template-rows: repeat(12,90vw); 
+    
+  }
+
+  .card h2{
+    font-size: 4vw;
+  }
+
+  .card .text{
+    font-size: 3.8vw;
+    margin-bottom: 53vw;
+  }
+
+  .card .time{
+    font-size: 3vw;
+  }
+
+  .card .emotion{
+    font-size: 3vw;
+  }
+
+  .more .plus{  
+    margin-top:5rem ;
   }
 }
