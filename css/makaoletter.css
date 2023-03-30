@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   color: black;
+  font-size: 8px;
 }
 
 ul,li{
@@ -14,18 +17,19 @@ a{
 
 header{
   display: grid;
-  padding:0 29vw;
-  grid-template-columns: 90% 1fr 1fr; 
-  margin: 1em 0;
-  z-index: 1;  
+  padding:0 rem;
+  grid-template-columns: 80% 1fr 1fr; 
+  margin: 1rem 0;
+  
 }
 
 
 header #logo{
   display: grid;
   place-items: center;
+  padding-left: 45rem;
   color: black;
-  font-size: 1.7vw;
+  font-size: 60px;
   font-weight: bold;
   font-family:'Pacifico', cursive;  
   z-index: 1;  
@@ -35,20 +39,19 @@ header ul{
   z-index: 1;  
 }
 
-@media (max-width:1024px) {
-  header ul{
-    display: none;
-  }
-}
-
 header ul{
   display: flex;
   align-items: center;
 }
 
+@media (max-width:1024px) {
+  header ul{
+    display: none;
+  }
+}
 header button {
-  width: 1.3vw;
-  height: 1.3vw;
+  width: 4rem;
+  height: 4rem;
   border: 1px solid #000;
   cursor: pointer;
 }
@@ -71,84 +74,88 @@ header ul .login button{
 
 #slogan {
   position: relative;
-  padding-top: 10vw;
+  padding-top: 30rem;
   border-bottom: 1px solid #889;
   background-color: #FFF;
+  
 }
 
 #slogan img {
   position: absolute;
-  padding:0 28vw;
-  top: -3vw;
+  padding:0 30rem;
+  top: -11rem;
   left: 48%;
   transform: translate3d(-50%, 0, 0);
-  width: 18vw;
+  width: 53rem;
 }
 
 #slogan .title{
-  position: relative;
-  padding: 0 28vw;
+  display: grid;
+  justify-content: center;
+  padding-right: 35rem;
   border-top: 1px solid #000;
   background-color: #4593FC;
-  z-index: 1;
+  transform: translate3d(0, 0, 0);/*???*/
 }
 
 #slogan h2, h2 strong {
-  font-size: 2vw;
-  line-height: 3.3vw;
+  font-size: 6.2rem;
+  line-height: 10rem;
 }
 
 .content .contents{
   display: grid;
-  grid-template-columns: repeat(4,14em);
-  grid-template-rows: repeat(3,1fr); 
-  padding:0 28vw 2vw;
-
+  grid-template-columns: repeat(4,30rem);
+  grid-template-rows: repeat(3,38rem); 
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-right: 20rem;
 }
 
 .contents .card{
-  padding:0.5vw 0.5vw ;
+  padding: 2rem 2rem ;
   border: 1px solid rgb(39, 38, 38);
 }
 
 .card h2{
-  font-size: 1em;
-  margin-bottom: 0.7vw;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
   z-index: 1;  
 }
 
 .card .text{
-  font-size: 0.9em;
-  margin-bottom: 10em;
+  font-size: 2rem;
+  margin-bottom: 18rem;
 }
 
 .card .time{
   display: inline-block;
-  font-size: 0.4vw;
+  font-size: 1.3rem;
 }
 
 .card .emotion{
   display: inline-block;
   float: right;
-  font-size: 0.4vw;
+  
 }
 
 .content .more{
   display: flex;
   justify-content: center;
   
-  margin-bottom: 20vh;
+  margin-bottom: 20rem;
 }
 
 .more .plus{  
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 9vw;
-  width: 6vw;
-  height: 3vh;
+  margin-right: 20rem;
+  width: 15rem;
+  height: 5rem;
   color: white;
-  border-radius: 3vh;
+  font-size: 2rem;
+  border-radius: 3rem;
   border-style: solid;
   border-color:#4593FC;
   background-color: #4593FC;
