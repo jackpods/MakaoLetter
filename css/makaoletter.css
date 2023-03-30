@@ -4,7 +4,8 @@
   padding: 0;
   margin: 0;
   color: black;
-  font-size: 8px;
+  font-size: 8px;  
+  
 }
 
 ul,li{
@@ -17,7 +18,6 @@ a{
 
 header{
   display: grid;
-  padding:0 rem;
   grid-template-columns: 80% 1fr 1fr; 
   margin: 1rem 0;
   
@@ -44,11 +44,6 @@ header ul{
   align-items: center;
 }
 
-@media (max-width:1024px) {
-  header ul{
-    display: none;
-  }
-}
 header button {
   width: 4rem;
   height: 4rem;
@@ -164,4 +159,42 @@ header ul .login button{
 .more .plus:hover{
   background-color: #FFF;
   color: black;
+}
+
+@media (max-width:1024px) {
+
+  header ul{
+    display: none;
+  }
+
+  #slogan h2, h2 strong {
+        
+    font-size: 4rem;
+    line-height: 5rem;    
+  }
+
+  #slogan h2 strong{
+    display: block;
+  }
+
+  #slogan .title{
+    padding: 0;
+    padding-left: 13rem;
+  }
+
+  #slogan img {
+    padding: 0;
+    width: 56rem;
+    padding-left: 23rem;
+  }
+
+  .content .contents{    
+    grid-template-columns: repeat(3,40rem);
+    grid-template-rows: repeat(4,38rem);     
+    margin: 0 25rem;
+  }
+
+  .more .plus{  
+    margin-right:1rem ;
+  }
 }
