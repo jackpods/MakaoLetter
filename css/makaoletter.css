@@ -1,0 +1,261 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-size: 8px;  
+  
+}
+
+ul,li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 80% 1fr 1fr; 
+  margin: 1rem 0;
+  
+}
+
+
+header #logo{
+  display: grid;
+  place-items: center;
+  padding-left: 45rem;
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  font-family:'Pacifico', cursive;  
+  z-index: 1;  
+}
+
+header ul{
+  z-index: 1;  
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+}
+
+header button {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #DDEBFC;
+}
+
+header button:active {
+  background-color: #FFF;
+}
+
+header ul .search button{
+  background: url(../images/search.png) no-repeat center/50%;
+}
+
+header ul .login button{
+  background: url(../images/user.png) no-repeat center/50%;
+}
+
+#slogan {
+  position: relative;
+  padding-top: 30rem;
+  border-bottom: 1px solid #889;
+  background-color: #FFF;
+  
+}
+
+#slogan img {
+  position: absolute;
+  padding:0 30rem;
+  top: -11rem;
+  left: 48%;
+  transform: translate3d(-50%, 0, 0);
+  width: 53rem;
+}
+
+#slogan .title{
+  display: grid;
+  justify-content: center;
+  padding-right: 35rem;
+  border-top: 1px solid #000;
+  background-color: #4593FC;
+  transform: translate3d(0, 0, 0);/*????*/
+}
+
+#slogan h2, h2 strong {
+  font-size: 6.2rem;
+  line-height: 10rem;
+}
+
+.content .contents{
+  display: grid;
+  grid-template-columns: repeat(4,30rem);
+  grid-template-rows: repeat(3,38rem); 
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-right: 20rem;
+}
+
+.contents .card{
+  padding: 2rem 2rem ;
+  border: 1px solid rgb(39, 38, 38);
+}
+
+.card h2{
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+  z-index: 1;  
+}
+
+.card .text{
+  font-size: 2rem;
+  margin-bottom: 18rem;
+}
+
+.card .time{
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.card .emotion{
+  display: inline-block;
+  float: right;
+  
+}
+
+.content .more{
+  display: flex;
+  justify-content: center;
+  
+  margin-bottom: 20rem;
+}
+
+.more .plus{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rem;
+  width: 15rem;
+  height: 5rem;
+  color: white;
+  font-size: 2rem;
+  border-radius: 3rem;
+  border-style: solid;
+  border-color:#4593FC;
+  background-color: #4593FC;
+}
+
+.more .plus:hover{
+  background-color: #FFF;
+  color: black;
+}
+
+@media (max-width:1024px) {
+
+  header ul{
+    display: none;
+  }
+
+  #slogan h2, h2 strong {
+        
+    font-size: 4rem;
+    line-height: 5rem;    
+  }
+
+  #slogan h2 strong{
+    display: block;
+  }
+
+  #slogan .title{
+    padding: 0;
+    padding-left: 13rem;
+  }
+
+  #slogan img {
+    padding: 0;
+    width: 56rem;
+    padding-left: 23rem;
+  }
+
+  .content .contents{    
+    grid-template-columns: repeat(3,40rem);
+    grid-template-rows: repeat(4,38rem);     
+    margin: 0 25rem;
+  }
+
+  .more .plus{  
+    margin-top: 5rem;
+    margin-right:5rem ;
+  }
+
+}
+
+@media(max-width:900){
+  .content .contents{    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);     
+    
+  }
+  
+}
+
+@media (max-width:600px){
+  header #logo{
+  
+  padding: 0;
+  padding-left:20vw ;
+  font-size: 10vw;
+
+  }  
+
+  #slogan .title{
+    padding: 0 ;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    
+  }
+
+  #slogan img{
+    padding-left: 3vw;
+    
+    width: 70vw;
+  }
+
+  .content .contents{
+    grid-template-columns: 65rem;
+    grid-template-rows: repeat(12,90vw); 
+    
+  }
+
+  .card h2{
+    font-size: 4vw;
+  }
+
+  .card .text{
+    font-size: 3.8vw;
+    margin-bottom: 53vw;
+  }
+
+  .card .time{
+    font-size: 3vw;
+  }
+
+  .card .emotion{
+    font-size: 3vw;
+  }
+
+  .more .plus{  
+    margin-top:5rem ;
+  }
+}
